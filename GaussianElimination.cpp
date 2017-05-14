@@ -84,8 +84,10 @@ double ComputeL2(vector< vector<double> >  & A, vector<double> & x, vector<doubl
 int main(int argc, const char * argv[]) {
     // Serial case will not need workingThreads
     // Otherwise accept nthreads from commandline
+#ifdef TEST
     argc = 2;
     argv[1] = "1000";
+#endif
     if(argc < 2){
         printf("Usage : ./%s <dimension>", argv[0]);
         return -1;
