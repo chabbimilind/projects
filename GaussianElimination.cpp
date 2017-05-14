@@ -77,7 +77,7 @@ double ComputeL2(vector< vector<double> >  & A, vector<double> & x, vector<doubl
 // Your task is to:
 // 1. Make this code multi-threaded using OpenMP
 // 2. Make this code multi-process using MPI.
-// 3. Make this threaded multi-threaded and mylti-process via OpenMP within a node and multi-process across nodes.
+// 3. Make this code multi-threaded and mylti-process via OpenMP within a node and multi-process across nodes.
 // 4. Compute parallel scaling and efficiency at various thread/process counts and compare and contrast different implementations.
 // Use 8000x8000 as a reference matrix for your efficiency computation.
 
