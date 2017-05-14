@@ -69,7 +69,7 @@ double ComputeL2(vector< vector<double> >  & A, vector<double> & x, vector<doubl
 // Gaussian elimination with partial piviting is a method to solve a system of linear equations.
 // A matlab reference implementation is here: https://www.mathworks.com/matlabcentral/fileexchange/26774-gaussian-elimination-with-partial-pivoting?focused=5147355&tab=function
 // The code below is a C++ single-threaded implementation.
-// The system solve Ax=b, where A is a n * n matrix, x and b are a n-dimensional vectors.
+// The system solve Ax=b, where A is a n * n matrix, x and b are n-dimensional vectors.
 // The solve phase converts A into an upper triangular matrix.
 // Partial pivoting is used for numerical stability.
 // The back substitution phase finds the unknowns x.
