@@ -69,15 +69,15 @@ double ComputeL2(vector< vector<double> >  & A, vector<double> & x, vector<doubl
 // Gaussian elimination with partial piviting is a method to solve a system of linear equations.
 // A matlab reference implementation is here: https://www.mathworks.com/matlabcentral/fileexchange/26774-gaussian-elimination-with-partial-pivoting?focused=5147355&tab=function
 // The code below is a C++ single-threaded implementation.
-// The system solve Ax=b, where A is a n * n matrix, x and b are n-dimensional vectors.
+// The system solves Ax=b, where A is a n * n matrix, x and b are n-dimensional vectors.
 // The solve phase converts A into an upper triangular matrix.
 // Partial pivoting is used for numerical stability.
-// The back substitution phase finds the unknowns x.
+// The back substitution phase finds the unknown(s) x.
 // The solution can be verified by computing the L2norm, whose value should be close to 0.
 // Your task is to:
 // 1. Make this code multi-threaded using OpenMP
 // 2. Make this code multi-process using MPI.
-// 3. Make this code multi-threaded and mylti-process via OpenMP within a node and multi-process across nodes.
+// 3. Make this code multi-threaded and multi-process via OpenMP within a node and multi-process across nodes.
 // 4. Compute parallel scaling and efficiency at various thread/process counts and compare and contrast different implementations.
 // Use 8000x8000 as a reference matrix for your efficiency computation.
 
